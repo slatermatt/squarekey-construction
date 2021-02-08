@@ -56,6 +56,7 @@ module.exports = {
 			full: '100%',
 		},
 		fontWeight: {
+			light: 300,
 			normal: 400,
 			bold: 700,
 		},

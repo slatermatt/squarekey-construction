@@ -1,19 +1,19 @@
 <template>
 	<div class="x-container flex flex-col items-center justify-center min-h-screen h-full">
-		<logo />
-
 		<h1
 			:class="[
-				'text-center max-w-2xl x-h1',
+				'text-center max-w-2xl x-h2',
 				'xl:max-w-3xl',
-				'mt-6 md:mt-8 xl:mt-10',
 			]"
 			v-text="$data.model.title"
 		/>
 
-		<x-button
-			class="mt-8 md:mt-10 xl:mt-12"
-			v-bind="$data.model.cta"
+		<p
+			:class="[
+				'x-h5 max-w-sm text-center font-light',
+				'mt-8 md:mt-10 xl:mt-12',
+			]"
+			v-text="$data.model.content"
 		/>
 	</div>
 </template>

@@ -20,6 +20,7 @@
 	}
 }
 
-@include font-face('Lato', 'lato/lato-bold');
+@include font-face('Lato', 'lato/lato-bold', 700);
 @include font-face('Lato', 'lato/lato-italic');
-@include font-face('Lato', 'lato/lato-regular');
+@include font-face('Lato', 'lato/lato-regular', 400);
+@include font-face('Lato', 'lato/lato-light', 300);

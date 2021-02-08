@@ -2,9 +2,6 @@
 	"title": "Home",
 	"model": {
 		"title": "Welome to our world of effective hygiene control",
-		"cta": {
-			"title": "Find out more",
-			"url": "/about"
-		}
+		"content": "Website under construction, check back later for more information"
 	}
 }
