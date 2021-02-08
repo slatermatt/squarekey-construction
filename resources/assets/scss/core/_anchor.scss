@@ -1,0 +1,11 @@
+a {
+	@apply text-brand-primary cursor-pointer no-underline;
+
+	&:hover {
+		@apply underline;
+
+		[data-whatintent=keyboard] & {
+			@apply no-underline;
+		}
+	}
+}
