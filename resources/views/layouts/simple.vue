@@ -4,6 +4,12 @@
 		class="flex flex-col min-h-screen"
 	>
 		<main class="relative flex-auto z-site-content">
+			<img
+				class="absolute inset-0 w-full h-full object-cover -z-1"
+				src="/static/img/background.jpg"
+				alt="Bubbles"
+			>
+
 			<intersect @intersect="$data.hidden = true">
 				<transition
 					leave-active-class="transition-opacity duration-1000"

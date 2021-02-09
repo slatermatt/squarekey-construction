@@ -1,9 +1,11 @@
 <template>
 	<div class="x-container flex flex-col items-center justify-center min-h-screen h-full">
+		<logo />
+
 		<h1
 			:class="[
-				'text-center max-w-2xl x-h2',
-				'xl:max-w-3xl',
+				'text-center max-w-2xl x-h1 mt-2',
+				'xl:max-w-3xl xl:mt-5',
 			]"
 			v-text="$data.model.title"
 		/>
@@ -11,7 +13,7 @@
 		<p
 			:class="[
 				'x-h5 max-w-sm text-center font-light',
-				'mt-8 md:mt-10 xl:mt-12',
+				'mt-4 md:mt-6 xl:mt-8',
 			]"
 			v-text="$data.model.content"
 		/>
