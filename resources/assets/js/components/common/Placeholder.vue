@@ -1,15 +1,13 @@
 <template>
-	<intersect @intersect="$data.visible = true">
-		<component
-			:is="$props.tag"
-			class="x-placeholder relative w-full"
-			:class="$props.ratio ? $props.ratio : 'pt-9/16'"
-		>
-			<transition name="x-fade">
-				<slot v-if="$data.visible" />
-			</transition>
-		</component>
-	</intersect>
+	<component
+		:is="$props.tag"
+		class="x-placeholder relative w-full"
+		:class="$props.ratio ? $props.ratio : 'pt-9/16'"
+	>
+		<transition name="x-fade">
+			<slot />
+		</transition>
+	</component>
 </template>
 
 <script>
@@ -24,12 +22,6 @@
 				type: String,
 				default: null,
 			},
-		},
-
-		data() {
-			return {
-				visible: false,
-			};
 		},
 	}
 </script>
